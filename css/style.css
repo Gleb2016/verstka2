@@ -8,16 +8,14 @@ ul{
 }
 
 body {
-    background-color: #8298ca;
+    background-color: #ffffff;
     text-align: center;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 20px; */
-    background-color: #acbadb;
-    
+    background-color: #8298ca;
 }
 
 footer {
@@ -33,7 +31,7 @@ footer p:last-child {
 }
 
 #about {
-    background-color:  rgb(180, 230, 255);
+    background-color:  rgb(255, 255, 255);
     padding: 20px 40px;
     text-align: center;
 }
