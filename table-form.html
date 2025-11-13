@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>таблицы и формы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table class="my-table">
+        <thead>
+            <tr>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>Стоимость</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Банан</td>
+                <td>10 &#8381</td>
+                <td rowspan="2">5</td>
+                <td>50 &#8381</td>
+            </tr>
+            <tr>
+                <td>Черный</td>
+                <td>300 &#8381</td>
+                <td>300 &#8381</td>
+            </tr>
+            <tr>
+                <td>банАаАан</td>
+                <td>40 &#8381</td>
+                <td>2</td>
+                <td>80 &#8381</td>
+            </tr>
+            <tr>
+                <td>Банаааан</td>
+                <td>30 &#8381</td>
+                <td>5</td>
+                <td>150 &#8381</td>
+            </tr>
+            <tr>
+                <td colspan="10"></td>>Итого</td>
+                <td>400 &#838</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id = "register" action="">
+        <label for = "login"> Введите логин</label><br>
+        <input type="text" id = "login" name="login" placeholder="логин" required><br>
+        <label for = "pass"> Введите пароль</label><br>
+        <input type="password" id="pass" name="login" placeholder="пароль" required><br>
+        <input type="submit" value="Зарегистрироваться" disabled><br>
+        <input type="radio" id = "student" name="role">
+        <label for="student">студент</label><br>
+        <input type="radio" id = "teacher" name="role">
+        <label for="teacher"> учитель</label><br>
+        <!-- required - проверка заполнил ли поле пользователь -->
+        <!-- disabled - отключает кнопку, чтобы поней нельзя было нажать, пока невыполнены скрипты -->
+
+        <input type="submit" value="Зарегестрироваться">
+
+        <label for="occupation">Направление</label><br>
+        <select name="occupation" id = "occupation">
+            <option value="it" Програмист></option>
+            <option value="diz" Дизайнер></option>
+            <option value="lig" Лингвист></option>
+        </select><br>
+
+        <label for="about"> о себе </label><br>
+        <textarea name="about" id="about" rows="10" cols="30"></textarea><dr>
+        <!-- rows - Кол-во строк
+        cols - кол-во слов -->
+
+    </form>
+</body>
+</html>
+
