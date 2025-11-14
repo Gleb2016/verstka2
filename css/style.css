@@ -15,11 +15,11 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #8298ca;
+    background-color: #ced6ea;
 }
 
 footer {
-    background-color: #a0b0d6;
+    background-color: #ced6ea;
     text-align: center;
     color: black;
     padding: 20px, 40px;
@@ -66,7 +66,7 @@ p::lang(en){
 /* Страниици */
 
 #content1, #content2, #content3, #content4 {
-    background-color: green;
+    background-color: rgb(255, 255, 255);
     padding: 20px, 40px;
     text-align: center;
 }
@@ -89,17 +89,31 @@ p::lang(en){
     text-align: center;
 } */
 
+/* ....................................... */
+
+/* Картинки */
+
 img { 
     margin: 15px 0;                     
     padding: 5px;                       
-    background-color: white;            
+    background-color: white;
 }
 
+header .smile-img{
+    border-radius: 90px;
+    border: 0px solid rgb(0, 0, 0);
+    
+}
+
+footer .img-telegram, .img-cookie{
+    border: 2px solid black;
+    border-radius: 90px;
+}
 
 figcaption {
     text-align: center;                 
     margin-top: 5px;                    
-    color: yellow;
+    color: rgb(255, 255, 0);
     font-size: 14px;                    
 }
 
@@ -111,45 +125,18 @@ figcaption {
     margin: 30px auto;
     list-style-type: none;
     border-radius: 50px; /* Закругление углов */
-    background-color: rgb(252, 190, 252); 
+    background-color:
+    #dacbed;
 }
 
-h2 {
-    text-align: center;
-}
-
-
-p{
-    text-align: justify;
-    font-size: 20px;
-    margin-top: 0px;
-    padding: 0px 20px 20px 20px;
-}
-
-.glavnaya{
-    font-size: 30px;
-    padding: 4px 20px;
-    text-decoration: none;
-
-}
-
-.BBED{
-    font-size: 20px;
-    padding: 12px 20px;
-    text-decoration: none;
-}
-
-.BBED:hover, .glavnaya:hover{
-    background-color: blue;
-    color: white;
-    border-radius: 50px;
-}
-
-.BBED:focus, .glavnaya:focus{
-    outline: 4px solid red; 
-    background-color: rgb(180, 230, 255);
-    color: white;
-    border-radius: 50px;
+#bio1{
+    padding: 2px 40px; 
+    width: 300px; /* Ширина */
+    margin: 3px auto;
+    list-style-type: none;
+    border-radius: 5px; /* Закругление углов */
+    background-color:
+    #dacbed;
 }
 
 /* infa */
@@ -160,11 +147,10 @@ p{
     padding: 12px 20px;   /* Отступы сверху/снизу слева/справа  */ 
     text-decoration: none;
     display: block; /* Делает из сылок отдельные блоки */
-}
-
+} 
 
 .infa:hover{
-    color: rgb(0, 30, 255);
+    color: rgb(0, 0, 0);
     background-color: yellow;
     outline: 2px solid rgb(0, 30, 255);
     border-radius: 20px;
@@ -176,7 +162,63 @@ p{
     padding: 2px 5px;
 }
 
-/* НЕ РАБОТАЕТ (Должен менять цвет через одну ссылку */
+/* Введение */
+
+.BBED{
+    font-size: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.BBED:hover, .glavnaya:hover{
+    color: white;
+    padding: 1px 15px 0px ; /* вверх, лево/прво, низ */
+    /* border-radius: 50px; */
+    background-color: blue;
+    outline: 4px solid rgb(0, 30, 255);
+}
+
+.BBED:focus, .glavnaya:focus{
+    color: white;
+    padding: 1px 15px 0px ;
+    border-radius: 50px;
+    background-color: #b4e6ff;
+    outline: 4px solid blue; 
+}
+
+.INFA{
+    font-size: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.INFA:hover, .INFA:hover{
+    color: white;
+    padding: 1px 15px 0px ; /* вверх, лево/прво, низ */
+    /* border-radius: 50px; */
+    background-color: blue;
+    outline: 4px solid rgb(0, 30, 255);
+}
+     
+.INFA:focus, .INFA:focus{
+    color: white;
+    padding: 1px 15px 0px;
+    border-radius: 50px;
+    background-color: #b4e6ff;
+    outline: 4px solid blue; 
+}
+
+h2 {
+    text-align: center;
+}
+
+.glavnaya{
+    font-size: 30px;
+    padding: 4px 20px;
+    text-decoration: none;
+}
+
+/* НЕ РАБОТАЕТ (Должен менять цвет ссылок через одну */
 
 /* .infa:nth-child(odd){
     color: rgb(52, 202, 152);
