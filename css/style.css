@@ -8,18 +8,21 @@ ul{
 }
 
 body {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #4284ff;
     text-align: center;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #ced6ea;
+    /* background-color: #ced6ea; */
+    background-color: white;
 }
 
 footer {
-    background-color: #ced6ea;
+    /* background-color: #ced6ea; */
+    background-color: red;
     text-align: center;
     color: black;
     padding: 20px, 40px;
@@ -31,7 +34,8 @@ footer p:last-child {
 }
 
 #about {
-    background-color:  rgb(255, 255, 255);
+    /* background-color:  rgb(255, 255, 255); */
+    background-color: #4284ff;
     padding: 20px 40px;
     text-align: center;
 }
@@ -54,12 +58,9 @@ p::first-line{
 }
 
 /* Для англиского */
-
-/*...Неработает... */
-p::lang(en){
-    color: aqua;
-    background-color: steelblue;
-    border-radius: 5px;
+p:lang(en) {
+    font-style: italic;
+    font-weight: 600;
 }
 /* ............................ */
 
@@ -94,9 +95,10 @@ p::lang(en){
 /* Картинки */
 
 img { 
-    margin: 15px 0;                     
-    padding: 5px;                       
+    margin: 15px 0;
+    padding: 5px;
     background-color: white;
+
 }
 
 header .smile-img{
@@ -111,10 +113,10 @@ footer .img-telegram, .img-cookie{
 }
 
 figcaption {
-    text-align: center;                 
-    margin-top: 5px;                    
-    color: rgb(255, 255, 0);
-    font-size: 14px;                    
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;    
 }
 
 /* Рамка с информацией */
@@ -125,8 +127,7 @@ figcaption {
     margin: 30px auto;
     list-style-type: none;
     border-radius: 50px; /* Закругление углов */
-    background-color:
-    #dacbed;
+    background-color:#dacbed;
 }
 
 #bio1{
@@ -135,9 +136,28 @@ figcaption {
     margin: 3px auto;
     list-style-type: none;
     border-radius: 5px; /* Закругление углов */
-    background-color:
-    #dacbed;
+    background-color:#dacbed;
 }
+
+/* Меняет цвет у слов в рамке с информацией через строку */
+#articles ul li:nth-child(odd) .infa{ 
+    color: #ff971f;
+}
+
+#articles ul li:nth-child(even) .infa{
+    color: #4284ff;
+}
+
+/* Меняет цвет у слов в рамке с биография через строку */
+#content1 ul li:nth-child(odd) .BBED{   
+    color: #ff971f;
+}
+
+#content1 ul li:nth-child(even) .BBED{
+    color: #4284ff;
+}
+
+/* ..................................................... */
 
 /* infa */
 
@@ -145,14 +165,14 @@ figcaption {
     font-size: 20px;
     margin-bottom: 12px;
     padding: 12px 20px;   /* Отступы сверху/снизу слева/справа  */ 
-    text-decoration: none;
+    text-decoration: none; /* нижнее подчеркивание */
     display: block; /* Делает из сылок отдельные блоки */
 } 
 
-.infa:hover{
+.infa:hover{    
     color: rgb(0, 0, 0);
     background-color: yellow;
-    outline: 2px solid rgb(0, 30, 255);
+    outline: 4px solid rgb(0, 30, 255);
     border-radius: 20px;
 }
 
@@ -199,7 +219,7 @@ figcaption {
     background-color: blue;
     outline: 4px solid rgb(0, 30, 255);
 }
-     
+
 .INFA:focus, .INFA:focus{
     color: white;
     padding: 1px 15px 0px;
@@ -218,19 +238,6 @@ h2 {
     text-decoration: none;
 }
 
-/* НЕ РАБОТАЕТ (Должен менять цвет ссылок через одну */
-
-/* .infa:nth-child(odd){
-    color: rgb(52, 202, 152);
-    background-color: transparent;
-}
-
-.infa:nth-child(even){
-    color: rgb(52, 0, 152);
-} */
-
-/* ..................................................... */
-
 body{
     /* border: 10px solid red; */
     font-size: initial;   
@@ -242,7 +249,7 @@ a:link { /* меняет цвет сылки пока по ней не пере�
 
 a:visited{ /* меняет цвет сылки после перехода поней */
     color: rgb(0, 0, 0);
-}       
+}
 
 a:focus{ /* меняет цвет после нажатие по сылке */
     color: rgb(255, 0, 0);
@@ -268,6 +275,11 @@ a:active{
 
 dl{
     padding-left: 20px;
+}
+
+dl dt{
+    font-weight: 600;
+    padding: 3px 0px;
 }
 
 .poch, .tel{
