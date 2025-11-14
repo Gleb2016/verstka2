@@ -101,6 +101,10 @@ img {
 
 }
 
+img + p{
+    margin-top: 20px;
+}
+
 header .smile-img{
     border-radius: 90px;
     border: 0px solid rgb(0, 0, 0);
@@ -228,8 +232,11 @@ figcaption {
     outline: 4px solid blue; 
 }
 
-h2 {
-    text-align: center;
+h1, h2{
+    text-decoration: underline; /* подчеркивает текст */
+    text-transform: uppercase; /* делает буквы заглавными */
+    font-weight: bold; 
+    font-style: normal;
 }
 
 .glavnaya{
